@@ -1,0 +1,11 @@
+
+[Unit]
+Description=Buzz button
+
+[Service]
+WorkingDirectory=/home/deck/projects/colorful-buttons
+ExecStart=/home/deck/projects/colorful-buttons/buttons/bin/python /home/deck/projects/colorful-buttons/server.py
+Restart=always
+
+[Install]
+WantedBy=default.target
