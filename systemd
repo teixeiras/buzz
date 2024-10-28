@@ -3,8 +3,8 @@
 Description=Buzz button
 
 [Service]
-WorkingDirectory=/home/deck/projects/colorful-buttons
-ExecStart=/home/deck/projects/colorful-buttons/buttons/bin/python /home/deck/projects/colorful-buttons/server.py
+WorkingDirectory=/home/deck/projects/buzz
+ExecStart=/home/deck/projects/buzz/buttons/bin/python /home/deck/projects/buzz/server.py
 Restart=always
 
 [Install]

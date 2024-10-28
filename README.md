@@ -1,3 +1,17 @@
+Application based on the project Colorful button
+
+
+Steam deck installation
+
+git clone https://github.com/teixeiras/buzz
+mkdir ~/projects
+mv buzz ~/projects
+cp systemd ~/.config/systemd/user/buttons.service
+systemctl --user enable buttons
+systemctl --user start buttons
+
+
+
 # 🎮 Colorful Buttons 🌟
 
 A simple Python script simulates the "Buzz!" Playstation 2 controller using a Smartphone or Tablet.
