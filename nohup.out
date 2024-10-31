@@ -1,0 +1,371 @@
++ set -o pipefail
+++ logname
++ logged_in_user=deck
++ [[ -z unix:path=/run/user/1000/bus ]]
+++ pwd
++ export LD_LIBRARY_PATH=/home/deck/projects/buzz
++ LD_LIBRARY_PATH=/home/deck/projects/buzz
+++ id -u deck
++ logged_in_uid=1000
+++ eval echo '~deck'
++++ echo /home/deck
++ logged_in_home=/home/deck
++ zenity --info '--text=DBus session address: unix:path=/run/user/1000/bus' --no-session-bus
+This option is not available. Please see --help for all possible usages.
+++ eval echo '~'
++++ echo /home/deck
++ download_dir=/home/deck/Downloads/NonSteamLaunchersInstallation
+++ eval echo '~'
++++ echo /home/deck
++ log_file=/home/deck/Downloads/NonSteamLaunchers-install.log
++ [[ -f /home/deck/Downloads/NonSteamLaunchers-install.log ]]
++ rm /home/deck/Downloads/NonSteamLaunchers-install.log
++ exec
+++ tee -a /home/deck/Downloads/NonSteamLaunchers-install.log
++ version=v3.9.6
++ args=("$@")
++ deckyplugin=false
++ installchrome=false
++ for arg in "${args[@]}"
++ '[' Blizzard = DeckyPlugin ']'
++ '[' Blizzard = Chrome ']'
++ false
++ '[' false = false ']'
++ repo_url=https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck/archive/refs/heads/main.zip
++ folders_to_clone=('requests' 'urllib3' 'steamgrid' 'vdf' 'charset_normalizer')
+++ eval echo '~'
++++ echo /home/deck
++ logged_in_home=/home/deck
++ parent_folder=/home/deck/.config/systemd/user/Modules
++ mkdir -p /home/deck/.config/systemd/user/Modules
++ folders_exist=true
++ for folder in "${folders_to_clone[@]}"
++ '[' '!' -d /home/deck/.config/systemd/user/Modules/requests ']'
++ for folder in "${folders_to_clone[@]}"
++ '[' '!' -d /home/deck/.config/systemd/user/Modules/urllib3 ']'
++ for folder in "${folders_to_clone[@]}"
++ '[' '!' -d /home/deck/.config/systemd/user/Modules/steamgrid ']'
++ for folder in "${folders_to_clone[@]}"
++ '[' '!' -d /home/deck/.config/systemd/user/Modules/vdf ']'
++ for folder in "${folders_to_clone[@]}"
++ '[' '!' -d /home/deck/.config/systemd/user/Modules/charset_normalizer ']'
++ '[' true = false ']'
++ rm -rf /home/deck/.config/systemd/user/NSLGameScanner.py
++ rm -rf /home/deck/.config/systemd/user/nslgamescanner.service
++ unlink /home/deck/.config/systemd/user/default.target.wants/nslgamescanner.service
+unlink: cannot unlink '/home/deck/.config/systemd/user/default.target.wants/nslgamescanner.service': No such file or directory
++ systemctl --user daemon-reload
++ python_script_path=/home/deck/.config/systemd/user/NSLGameScanner.py
++ github_link=https://raw.githubusercontent.com/moraroy/NonSteamLaunchers-On-Steam-Deck/main/NSLGameScanner.py
++ curl -o /home/deck/.config/systemd/user/NSLGameScanner.py https://raw.githubusercontent.com/moraroy/NonSteamLaunchers-On-Steam-Deck/main/NSLGameScanner.py
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 59277    1   820    0     0   3103      0  0:00:19 --:--:--  0:00:19  3106100 59277  100 59277    0     0   204k      0 --:--:-- --:--:-- --:--:--  203k
++ env_vars=/home/deck/.config/systemd/user/env_vars
++ '[' -f /home/deck/.config/systemd/user/env_vars ']'
++ echo 'env_vars file not found. Not Running the .py file.'
+env_vars file not found. Not Running the .py file.
++ live='and is not LIVE.'
++ decky_plugin=false
++ for arg in "${args[@]}"
++ '[' Blizzard = 'Decky Plugin' ']'
++ '[' false = true ']'
++ echo 'Decky Plugin argument not set. Continuing with the script...'
+Decky Plugin argument not set. Continuing with the script...
++ python3 /home/deck/.config/systemd/user/NSLGameScanner.py
+Error: /home/deck/.config/systemd/user/env_vars does not exist.
++ echo 'env_vars file found. Running the .py file.'
+env_vars file found. Running the .py file.
++ live='and is LIVE.'
++ '[' 1 -eq 0 ']'
++ '[' -d /home/deck/Downloads/NonSteamLaunchersInstallation ']'
++ rm -rf /home/deck/Downloads/NonSteamLaunchersInstallation
++ echo 'Deleted NonSteamLaunchersInstallation subfolder'
+Deleted NonSteamLaunchersInstallation subfolder
++ epic_games_launcher_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Epic Games/Launcher/Portal/Binaries/Win32/EpicGamesLauncher.exe'
++ epic_games_launcher_path2='/home/deck/.local/share/Steam/steamapps/compatdata/EpicGamesLauncher/pfx/drive_c/Program Files (x86)/Epic Games/Launcher/Portal/Binaries/Win32/EpicGamesLauncher.exe'
++ gog_galaxy_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/GOG Galaxy/GalaxyClient.exe'
++ gog_galaxy_path2='/home/deck/.local/share/Steam/steamapps/compatdata/GogGalaxyLauncher/pfx/drive_c/Program Files (x86)/GOG Galaxy/GalaxyClient.exe'
++ uplay_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Ubisoft/Ubisoft Game Launcher/upc.exe'
++ uplay_path2='/home/deck/.local/share/Steam/steamapps/compatdata/UplayLauncher/pfx/drive_c/Program Files (x86)/Ubisoft/Ubisoft Game Launcher/upc.exe'
++ battlenet_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Battle.net/Battle.net Launcher.exe'
++ battlenet_path2='/home/deck/.local/share/Steam/steamapps/compatdata/Battle.netLauncher/pfx/drive_c/Program Files (x86)/Battle.net/Battle.net Launcher.exe'
++ eaapp_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Electronic Arts/EA Desktop/EA Desktop/EADesktop.exe'
++ eaapp_path2='/home/deck/.local/share/Steam/steamapps/compatdata/TheEAappLauncher/pfx/drive_c/Program Files/Electronic Arts/EA Desktop/EA Desktop/EADesktop.exe'
++ amazongames_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/users/steamuser/AppData/Local/Amazon Games/App/Amazon Games.exe'
++ amazongames_path2='/home/deck/.local/share/Steam/steamapps/compatdata/AmazonGamesLauncher/pfx/drive_c/users/steamuser/AppData/Local/Amazon Games/App/Amazon Games.exe'
++ itchio_path1=/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/users/steamuser/AppData/Local/itch/app-26.1.9/itch.exe
++ itchio_path2=/home/deck/.local/share/Steam/steamapps/compatdata/itchioLauncher/pfx/drive_c/users/steamuser/AppData/Local/itch/app-26.1.9/itch.exe
++ legacygames_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Legacy Games/Legacy Games Launcher/Legacy Games Launcher.exe'
++ legacygames_path2='/home/deck/.local/share/Steam/steamapps/compatdata/LegacyGamesLauncher/pfx/drive_c/Program Files/Legacy Games/Legacy Games Launcher/Legacy Games Launcher.exe'
++ humblegames_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Humble App/Humble App.exe'
++ humblegames_path2='/home/deck/.local/share/Steam/steamapps/compatdata/HumbleGamesLauncher/pfx/drive_c/Program Files/Humble App/Humble App.exe'
++ indiegala_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/IGClient/IGClient.exe'
++ indiegala_path2='/home/deck/.local/share/Steam/steamapps/compatdata/IndieGalaLauncher/pfx/drive_c/Program Files/IGClient/IGClient.exe'
++ rockstar_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Rockstar Games/Launcher/Launcher.exe'
++ rockstar_path2='/home/deck/.local/share/Steam/steamapps/compatdata/RockstarGamesLauncher/pfx/drive_c/Program Files/Rockstar Games/Launcher/Launcher.exe'
++ glyph_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Glyph/GlyphClient.exe'
++ glyph_path2='/home/deck/.local/share/Steam/steamapps/compatdata/GlyphLauncher/pfx/drive_c/Program Files (x86)/Glyph/GlyphClient.exe'
++ psplus_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/PlayStationPlus/pspluslauncher.exe'
++ psplus_path2='/home/deck/.local/share/Steam/steamapps/compatdata/PlaystationPlusLauncher/pfx/drive_c/Program Files (x86)/PlayStationPlus/pspluslauncher.exe'
++ vkplay_path1=/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/users/steamuser/AppData/Local/GameCenter/GameCenter.exe
++ vkplay_path2=/home/deck/.local/share/Steam/steamapps/compatdata/VKPlayLauncher/pfx/drive_c/users/steamuser/AppData/Local/GameCenter/GameCenter.exe
++ hoyoplay_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/HoYoPlay/launcher.exe'
++ hoyoplay_path2='/home/deck/.local/share/Steam/steamapps/compatdata/HoYoPlayLauncher/pfx/drive_c/Program Files/HoYoPlay/launcher.exe'
++ nexon_path1='/home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Nexon/Nexon Launcher/nexon_launcher.exe'
++ nexon_path2='/home/deck/.local/share/Steam/steamapps/compatdata/NexonLauncher/pfx/drive_c/Program Files (x86)/Nexon/Nexon Launcher/nexon_launcher.exe'
++ chrome_path=/usr/bin/flatpak
++ chrome_startdir='"/usr/bin"'
++ chromedirectory='"/usr/bin/flatpak"'
++ CheckInstallations
++ declare -A paths1 paths2 names
++ paths1=(["epic_games"]="$epic_games_launcher_path1" ["gog_galaxy"]="$gog_galaxy_path1" ["uplay"]="$uplay_path1" ["battlenet"]="$battlenet_path1" ["eaapp"]="$eaapp_path1" ["amazongames"]="$amazongames_path1" ["itchio"]="$itchio_path1" ["legacygames"]="$legacygames_path1" ["humblegames"]="$humblegames_path1" ["indiegala"]="$indiegala_path1" ["rockstar"]="$rockstar_path1" ["glyph"]="$glyph_path1" ["psplus"]="$psplus_path1" ["vkplay"]="$vkplay_path1" ["hoyoplay"]=$hoyoplay_path1 ["nexon"]=$nexon_path1)
++ paths2=(["epic_games"]="$epic_games_launcher_path2" ["gog_galaxy"]="$gog_galaxy_path2" ["uplay"]="$uplay_path2" ["battlenet"]="$battlenet_path2" ["eaapp"]="$eaapp_path2" ["amazongames"]="$amazongames_path2" ["itchio"]="$itchio_path2" ["legacygames"]="$legacygames_path2" ["humblegames"]="$humblegames_path2" ["indiegala"]="$indiegala_path2" ["rockstar"]="$rockstar_path2" ["glyph"]="$glyph_path2" ["psplus"]="$psplus_path2" ["vkplay"]="$vkplay_path2" ["hoyoplay"]=$hoyoplay_path2 ["nexon"]=$nexon_path2)
++ names=(["epic_games"]="Epic Games" ["gog_galaxy"]="GOG Galaxy" ["uplay"]="Ubisoft Connect" ["battlenet"]="Battle.net" ["eaapp"]="EA App" ["amazongames"]="Amazon Games" ["itchio"]="itch.io" ["legacygames"]="Legacy Games" ["humblegames"]="Humble Games Collection" ["indiegala"]="IndieGala" ["rockstar"]="Rockstar Games Launcher" ["glyph"]="Glyph Launcher" ["psplus"]="Playstation Plus" ["vkplay"]="VK Play" ["hoyoplay"]="HoYoPlay" ["nexon"]="Nexon Launcher")
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/users/steamuser/AppData/Local/Amazon Games/App/Amazon Games.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/AmazonGamesLauncher/pfx/drive_c/users/steamuser/AppData/Local/Amazon Games/App/Amazon Games.exe ]]
++ declare -g amazongames_value=FALSE
++ declare -g 'amazongames_text=Amazon Games'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Rockstar Games/Launcher/Launcher.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/RockstarGamesLauncher/pfx/drive_c/Program Files/Rockstar Games/Launcher/Launcher.exe ]]
++ declare -g rockstar_value=FALSE
++ declare -g 'rockstar_text=Rockstar Games Launcher'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/IGClient/IGClient.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/IndieGalaLauncher/pfx/drive_c/Program Files/IGClient/IGClient.exe ]]
++ declare -g indiegala_value=FALSE
++ declare -g indiegala_text=IndieGala
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Nexon/Nexon Launcher/nexon_launcher.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NexonLauncher/pfx/drive_c/Program Files (x86)/Nexon/Nexon Launcher/nexon_launcher.exe ]]
++ declare -g nexon_value=FALSE
++ declare -g 'nexon_text=Nexon Launcher'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Ubisoft/Ubisoft Game Launcher/upc.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/UplayLauncher/pfx/drive_c/Program Files (x86)/Ubisoft/Ubisoft Game Launcher/upc.exe ]]
++ declare -g uplay_value=FALSE
++ declare -g 'uplay_text=Ubisoft Connect'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/GOG Galaxy/GalaxyClient.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/GogGalaxyLauncher/pfx/drive_c/Program Files (x86)/GOG Galaxy/GalaxyClient.exe ]]
++ declare -g gog_galaxy_value=FALSE
++ declare -g 'gog_galaxy_text=GOG Galaxy'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Epic Games/Launcher/Portal/Binaries/Win32/EpicGamesLauncher.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/EpicGamesLauncher/pfx/drive_c/Program Files (x86)/Epic Games/Launcher/Portal/Binaries/Win32/EpicGamesLauncher.exe ]]
++ declare -g epic_games_value=FALSE
++ declare -g 'epic_games_text=Epic Games'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Electronic Arts/EA Desktop/EA Desktop/EADesktop.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/TheEAappLauncher/pfx/drive_c/Program Files/Electronic Arts/EA Desktop/EA Desktop/EADesktop.exe ]]
++ declare -g eaapp_value=FALSE
++ declare -g 'eaapp_text=EA App'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/PlayStationPlus/pspluslauncher.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/PlaystationPlusLauncher/pfx/drive_c/Program Files (x86)/PlayStationPlus/pspluslauncher.exe ]]
++ declare -g psplus_value=FALSE
++ declare -g 'psplus_text=Playstation Plus'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/HoYoPlay/launcher.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/HoYoPlayLauncher/pfx/drive_c/Program Files/HoYoPlay/launcher.exe ]]
++ declare -g hoyoplay_value=FALSE
++ declare -g hoyoplay_text=HoYoPlay
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Battle.net/Battle.net Launcher.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/Battle.netLauncher/pfx/drive_c/Program Files (x86)/Battle.net/Battle.net Launcher.exe ]]
++ declare -g battlenet_value=FALSE
++ declare -g battlenet_text=Battle.net
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files (x86)/Glyph/GlyphClient.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/GlyphLauncher/pfx/drive_c/Program Files (x86)/Glyph/GlyphClient.exe ]]
++ declare -g glyph_value=FALSE
++ declare -g 'glyph_text=Glyph Launcher'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Humble App/Humble App.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/HumbleGamesLauncher/pfx/drive_c/Program Files/Humble App/Humble App.exe ]]
++ declare -g humblegames_value=FALSE
++ declare -g 'humblegames_text=Humble Games Collection'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/users/steamuser/AppData/Local/GameCenter/GameCenter.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/VKPlayLauncher/pfx/drive_c/users/steamuser/AppData/Local/GameCenter/GameCenter.exe ]]
++ declare -g vkplay_value=FALSE
++ declare -g 'vkplay_text=VK Play'
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/users/steamuser/AppData/Local/itch/app-26.1.9/itch.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/itchioLauncher/pfx/drive_c/users/steamuser/AppData/Local/itch/app-26.1.9/itch.exe ]]
++ declare -g itchio_value=FALSE
++ declare -g itchio_text=itch.io
++ for launcher in "${!names[@]}"
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Legacy Games/Legacy Games Launcher/Legacy Games Launcher.exe ]]
++ [[ -f /home/deck/.local/share/Steam/steamapps/compatdata/LegacyGamesLauncher/pfx/drive_c/Program Files/Legacy Games/Legacy Games Launcher/Legacy Games Launcher.exe ]]
++ declare -g legacygames_value=FALSE
++ declare -g 'legacygames_text=Legacy Games'
++ CheckInstallationDirectory
++ declare -A paths names
++ paths=(["nonsteamlauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers" ["epicgameslauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/EpicGamesLauncher" ["goggalaxylauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/GogGalaxyLauncher" ["uplaylauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/UplayLauncher" ["battlenetlauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/Battle.netLauncher" ["eaapplauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/TheEAappLauncher" ["amazongameslauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/AmazonGamesLauncher" ["itchiolauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/itchioLauncher" ["legacygameslauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/LegacyGamesLauncher" ["humblegameslauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/HumbleGamesLauncher" ["indiegalalauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/IndieGalaLauncher" ["rockstargameslauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/RockstarGamesLauncher" ["glyphlauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/GlyphLauncher" ["pspluslauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/PlaystationPlusLauncher" ["vkplaylauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/VKPlayLauncher" ["hoyoplaylauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/HoYoPlayLauncher" ["nexonlauncher"]="${logged_in_home}/.local/share/Steam/steamapps/compatdata/NexonLauncher")
++ names=(["nonsteamlauncher"]="NonSteamLaunchers" ["epicgameslauncher"]="EpicGamesLauncher" ["goggalaxylauncher"]="GogGalaxyLauncher" ["uplaylauncher"]="UplayLauncher" ["battlenetlauncher"]="Battle.netLauncher" ["eaapplauncher"]="TheEAappLauncher" ["amazongameslauncher"]="AmazonGamesLauncher" ["itchiolauncher"]="itchioLauncher" ["legacygameslauncher"]="LegacyGamesLauncher" ["humblegameslauncher"]="HumbleGamesLauncher" ["indiegalalauncher"]="IndieGalaLauncher" ["rockstargameslauncher"]="RockstarGamesLauncher" ["glyphlauncher"]="GlyphLauncher" ["pspluslauncher"]="PlaystationPlusLauncher" ["vkplaylauncher"]="VKPlayLauncher" ["hoyoplaylauncher"]="HoYoPlayLauncher" ["nexonlauncher"]="NexonLauncher")
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/RockstarGamesLauncher ]]
++ declare -g rockstargameslauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/HoYoPlayLauncher ]]
++ declare -g hoyoplaylauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/Battle.netLauncher ]]
++ declare -g battlenetlauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/AmazonGamesLauncher ]]
++ declare -g amazongameslauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/GlyphLauncher ]]
++ declare -g glyphlauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/itchioLauncher ]]
++ declare -g itchiolauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/VKPlayLauncher ]]
++ declare -g vkplaylauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/GogGalaxyLauncher ]]
++ declare -g goggalaxylauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/PlaystationPlusLauncher ]]
++ declare -g pspluslauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/HumbleGamesLauncher ]]
++ declare -g humblegameslauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/LegacyGamesLauncher ]]
++ declare -g legacygameslauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/UplayLauncher ]]
++ declare -g uplaylauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/NexonLauncher ]]
++ declare -g nexonlauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers ]]
++ declare -g nonsteamlauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/TheEAappLauncher ]]
++ declare -g eaapplauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/EpicGamesLauncher ]]
++ declare -g epicgameslauncher_move_value=FALSE
++ for launcher in "${!names[@]}"
++ [[ -d /home/deck/.local/share/Steam/steamapps/compatdata/IndieGalaLauncher ]]
++ declare -g indiegalalauncher_move_value=FALSE
++ rm -rf /home/deck/.config/systemd/user/nslgamescanner.service
++ unlink /home/deck/.config/systemd/user/default.target.wants/nslgamescanner.service
+unlink: cannot unlink '/home/deck/.config/systemd/user/default.target.wants/nslgamescanner.service': No such file or directory
++ systemctl --user daemon-reload
++ args=("$@")
++ custom_websites=()
++ separate_app_ids=false
++ '[' 1 -eq 0 ']'
++ selected_launchers=()
++ IFS=' '
++ for arg in "${args[@]}"
++ [[ Blizzard =~ ^https?:// ]]
++ selected_launchers+=("$arg")
+++ IFS='|'
+++ echo Blizzard
++ selected_launchers_str=Blizzard
++ [[ Blizzard =~ SEPARATE APP IDS - CHECK THIS TO SEPARATE YOUR PREFIX ]]
++ separate_app_ids=false
++ echo 'Selected launchers: Blizzard'
+Selected launchers: Blizzard
++ echo 'Selected launchers: Blizzard'
+Selected launchers: Blizzard
++ echo 'Custom websites: '
+Custom websites: 
++ echo 'Separate App IDs: false'
+Separate App IDs: false
++ '[' 1 -eq 0 ']'
++ options=Blizzard
++ '[' 0 -eq 1 ']'
++ '[' -z Blizzard ']'
++ [[ Blizzard == *\S\E\P\A\R\A\T\E\ \A\P\P\ \I\D\S\ \-\ \C\H\E\C\K\ \T\H\I\S\ \T\O\ \S\E\P\A\R\A\T\E\ \Y\O\U\R\ \P\R\E\F\I\X* ]]
++ use_separate_appids=false
++ [[ Blizzard == \S\t\a\r\t\ \F\r\e\s\h ]]
++ [[ Blizzard == \S\t\a\r\t\ \F\r\e\s\h ]]
++ echo 10
+10
++ echo '# Setting files in their place'
+# Setting files in their place
++ appid=NonSteamLaunchers
++ msi_url=https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
++ msi_file=/home/deck/Downloads/NonSteamLaunchersInstallation/EpicGamesLauncherInstaller.msi
++ exe_url=https://webinstallers.gog-statics.com/download/GOG_Galaxy_2.0.exe
++ exe_file=/home/deck/Downloads/NonSteamLaunchersInstallation/GOG_Galaxy_2.0.exe
++ ubi_url=https://ubi.li/4vxt9
++ ubi_file=/home/deck/Downloads/NonSteamLaunchersInstallation/UbisoftConnectInstaller.exe
++ battle_url='https://www.battle.net/download/getInstallerForGame?os=win&gameProgram=BATTLENET_APP&version=Live'
++ battle_file=/home/deck/Downloads/NonSteamLaunchersInstallation/Battle.net-Setup.exe
++ amazon_url=https://download.amazongames.com/AmazonGamesSetup.exe
++ amazon_file=/home/deck/Downloads/NonSteamLaunchersInstallation/AmazonGamesSetup.exe
++ eaapp_url=https://origin-a.akamaihd.net/EA-Desktop-Client-Download/installer-releases/EAappInstaller.exe
++ eaapp_file=/home/deck/Downloads/NonSteamLaunchersInstallation/EAappInstaller.exe
++ itchio_url='https://itch.io/app/download?platform=windows'
++ itchio_file=/home/deck/Downloads/NonSteamLaunchersInstallation/itch-setup.exe
++ legacygames_url=https://cdn.legacygames.com/LegacyGamesLauncher/legacy-games-launcher-setup-1.10.0-x64-full.exe
++ legacygames_file=/home/deck/Downloads/NonSteamLaunchersInstallation/legacy-games-launcher-setup-1.10.0-x64-full.exe
++ humblegames_url=https://www.humblebundle.com/app/download
++ humblegames_file=/home/deck/Downloads/NonSteamLaunchersInstallation/Humble-App-Setup-1.1.8+411.exe
++ indiegala_url=https://content.indiegalacdn.com/common/IGClientSetup.exe
++ indiegala_file=/home/deck/Downloads/NonSteamLaunchersInstallation/IGClientSetup.exe
++ rockstar_url=https://gamedownloads.rockstargames.com/public/installer/Rockstar-Games-Launcher.exe
++ rockstar_file=/home/deck/Downloads/NonSteamLaunchersInstallation/Rockstar-Games-Launcher.exe
++ glyph_url=https://glyph.dyn.triongames.com/glyph/live/GlyphInstall.exe
++ glyph_file=/home/deck/Downloads/NonSteamLaunchersInstallation/GlyphInstall.exe
++ psplus_url=https://download-psplus.playstation.com/downloads/psplus/pc/latest
++ psplus_file=/home/deck/Downloads/NonSteamLaunchersInstallation/PlayStationPlus-12.2.0.exe
++ vkplay_url=https://static.gc.vkplay.ru/VKPlayLoader.exe
++ vkplay_file=/home/deck/Downloads/NonSteamLaunchersInstallation/VKPlayLoader.exe
++ hoyoplay_url=https://download-porter.hoyoverse.com/download-porter/2024/06/07/hyp_global_setup_1.0.5.exe
++ hoyoplay_file=/home/deck/Downloads/NonSteamLaunchersInstallation/HoYoPlay_install.exe
++ nexon_url='https://download.nxfs.nexon.com/download-launcher?file=NexonLauncherSetup.exe&client-id=959013368.1720525616'
++ nexon_file=/home/deck/Downloads/NonSteamLaunchersInstallation/NexonLauncherSetup.exe
++ [[ '' == *\U\n\i\n\s\t\a\l\l\ \E\A\ \A\p\p* ]]
++ [[ '' == *\U\n\i\n\s\t\a\l\l\ \G\O\G\ \G\a\l\a\x\y* ]]
++ [[ '' == *\U\n\i\n\s\t\a\l\l\ \L\e\g\a\c\y\ \G\a\m\e\s\ \L\a\u\n\c\h\e\r* ]]
++ [[ '' == *\U\n\i\n\s\t\a\l\l\ \P\l\a\y\S\t\a\t\i\o\n\ \P\l\u\s* ]]
++ '[' 1 -gt 0 ']'
++ uninstalled_any_launcher=false
++ for arg in "$@"
++ [[ Blizzard == *\U\n\i\n\s\t\a\l\l\ * ]]
++ false
++ [[ Blizzard == \M\o\v\e\ \t\o\ \S\D\ \C\a\r\d ]]
++ [[ Blizzard == \M\o\v\e\ \t\o\ \S\D\ \C\a\r\d ]]
++ args=("$@")
++ [[  Blizzard  =~  Stop NSLGameScanner  ]]
++ [[ Blizzard == \S\t\o\p\ \N\S\L\G\a\m\e\S\c\a\n\n\e\r ]]
++ update_proton
++ echo 0
++ zenity --progress '--title=Update Status' '--text=Starting update...please wait...' --width=450 --height=350 --percentage=0 --auto-close
++ echo '# Detecting, Updating and Installing GE-Proton...please wait...'
++ '[' '!' -d /home/deck/.steam/root/compatibilitytools.d ']'
++ mkdir -p /home/deck/Downloads/NonSteamLaunchersInstallation
+++ find /home/deck/.steam/root/compatibilitytools.d -maxdepth 1 -type d -name 'GE-Proton*'
+++ sort -V
+++ tail -n1
++ proton_dir=/home/deck/.steam/root/compatibilitytools.d/GE-Proton9-13
++ '[' -z /home/deck/.steam/root/compatibilitytools.d/GE-Proton9-13 ']'
+++ basename /home/deck/.steam/root/compatibilitytools.d/GE-Proton9-13
+++ sed s/GE-Proton-//
++ installed_version=GE-Proton9-13
+++ curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest
+++ grep tag_name
+++ cut -d '"' -f 4
++ latest_version=GE-Proton9-16
++ '[' GE-Proton9-13 '!=' GE-Proton9-16 ']'
++ download_ge_proton
++ echo 'Downloading GE-Proton using the GitHub API'
++ cd /home/deck/Downloads/NonSteamLaunchersInstallation
+++ curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest
+++ grep browser_download_url
+++ cut '-d"' -f4
+++ grep .tar.gz
++ curl --retry 5 --retry-delay 0 --retry-max-time 60 -sLOJ https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton9-16/GE-Proton9-16.tar.gz

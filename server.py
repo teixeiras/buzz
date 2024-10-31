@@ -8,6 +8,9 @@ import socketserver
 import threading
 import argparse
 import time
+from flask import Flask, render_template
+
+app = Flask(__name__)
 
 # Default values
 player_count = 4
@@ -15,6 +18,13 @@ address = "0.0.0.0"
 webport = 8001
 socketport = 8000
 gamepads=[]
+color_mapping = {
+    'red': XUSB_BUTTON.XUSB_GAMEPAD_A,
+    'blue': XUSB_BUTTON.XUSB_GAMEPAD_B,
+    'orange': XUSB_BUTTON.XUSB_GAMEPAD_X,
+    'green': XUSB_BUTTON.XUSB_GAMEPAD_Y,
+    'yellow': XUSB_BUTTON.XUSB_GAMEPAD_START
+}
 parser = argparse.ArgumentParser(description='A simple script that Simulates the "Buzz Ps2 controller"')
 # Define arguments for variables that users can set from the command line
 parser.add_argument('--playercount', type=int, help='The amount of people that want to play')
@@ -37,11 +47,13 @@ if args.webport is not None:
 
 if args.socketport is not None:
     socketport = args.socketport
+
+@app.route('/')
+def index():
+    return render_template('index.html') 
+
 def serve_html():
-    handler = http.server.SimpleHTTPRequestHandler
-    with socketserver.TCPServer(("", webport), handler) as httpd:
-        print("Great the server started! Login to the wifi and visit http://" + address + ":" + str(webport) + "\n \n Enter the following for 'Server': \n " + address + ":" + str(socketport) + "\n \n You choose to play with " + str(player_count) + " people. Assign each controller a number from 1-" + str(player_count) + " in the 'Player' field.")
-        httpd.serve_forever()
+    app.run(debug=False, host='0.0.0.0', port=8001)
 
 server_thread = threading.Thread(target=serve_html)
 server_thread.daemon = True
@@ -51,20 +63,14 @@ print("Web server is running in a separate thread.")
 
 def press_button_based_on_color(color, gamepad, action):
     gamepad.reset()
-    color_mapping = {
-        'red': XUSB_BUTTON.XUSB_GAMEPAD_A,
-        'blue': XUSB_BUTTON.XUSB_GAMEPAD_B,
-        'orange': XUSB_BUTTON.XUSB_GAMEPAD_X,
-        'green': XUSB_BUTTON.XUSB_GAMEPAD_Y,
-        'yellow': XUSB_BUTTON.XUSB_GAMEPAD_START
-    }
+    global color_mapping
 
     if color.lower() in color_mapping:
         button = color_mapping[color.lower()]
         if action == "down":
             gamepad.press_button(button)
             gamepad.update()
-            time.sleep(0.5)
+            time.sleep(0.1)
             gamepad.release_button(button)
             gamepad.update()
             
@@ -93,19 +99,21 @@ async def handler(websocket, path):
             color = data.get('color')
             value = data.get('value')
             action = data.get('action')
-            press_button_based_on_color(color,gamepads[int(value)-1],action)
+            thr = threading.Thread(target=press_button_based_on_color, args=(color,gamepads[int(value)-1],action), kwargs={})
+            thr.start()
             print('recieved signal with value: '+value+' action:'+action+" color:"+color)
 
     except websockets.exceptions.ConnectionClosed:
         print(f"Client disconnected: {websocket.remote_address}")
-    
-        for gamepad in gamepads:
-            del gamepad
-        
-        gamepads=[]
+           
     finally:
-        # Remove the client from the set
+        # Remove the client from the set 
         connected_clients.remove(websocket)
+        if (len(connected_clients) == 0):
+            for gamepad in gamepads:
+                del gamepad
+            
+            gamepads=[]
 
    
 start_server = websockets.serve(handler, address, socketport)
